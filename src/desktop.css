@@ -1,0 +1,468 @@
+@media screen and (min-width: 768px) {
+
+    .li-none {
+        list-style: none;
+    }
+        
+    /* header, nav, frontpage */
+    
+    header {
+        background-size: cover;
+        height: 700px;
+        background: linear-gradient(rgba(0, 0, 0, 0.582),rgba(0, 0, 0, 0.571)) , url(../img/background-img-medium.jpg) no-repeat center;
+    }
+        
+    .main-nav {
+        display: flex;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 50px;
+        background-color: var(--third-color);
+        color: var(--secondary-color);
+        text-transform: uppercase;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .avatar {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin-top: -60px;
+      }
+        
+    h1 {
+        padding-left: 15px;
+        letter-spacing: 1px;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+    }
+        
+    /* mobil dropdown menu */
+    button.menu-button, #menu-button, .menu-button, .menu {
+        display: none;
+    }
+ 
+    .desktop-menu a {
+        background-color: var(--third-color);
+        padding-right: 20px;
+        color: rgb(194, 194, 194);
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 1px;
+        border: none;
+        cursor: pointer;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+    }
+    
+    .desktop-menu a.active {
+        color: var(--primary-color);
+    }
+        
+    .frontpage-content {
+        position: absolute;
+        width: 600px;
+        top: 180px;
+        left: 800px;
+        margin: 0;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+    }
+        
+    .welcome {
+        color: var(--primary-color);
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        margin: 0 auto;
+    }
+        
+    .frontpage-quote {
+        color: var(--secondary-color);
+        text-transform: uppercase;
+        font-size: 3.3rem;
+        margin: 0 auto;
+    }
+        
+    .frontpage-span {
+        color: transparent;
+        -webkit-text-stroke: 0.1px rgb(255, 255, 255);
+        -webkit-text-fill-color: transparent;
+    }
+        
+    .frontpage-text {
+        color: var(--secondary-color);
+        font-family: 'Poppins';
+        font-size: 1em;
+    }
+        
+    .frontpage-btn {
+        text-transform: uppercase;
+        border: 3px solid;
+        padding: 10px;
+        border-color:var(--primary-color);
+        background-color: transparent;
+        color: var(--primary-color);
+        cursor: pointer;
+    }
+
+    .frontpage-btn:hover {
+        color: var(--secondary-color);
+        border-color: var(--secondary-color);
+        background-color: var(--primary-color);
+        opacity: 90%;
+    }
+    
+    .frontpage-right {
+        display: flex;
+        flex-wrap: wrap;
+        border-left: 2px solid var(--primary-color);
+        justify-content: flex-start;
+        padding-left: 200px;
+    }
+        
+    /* services */
+    
+    .services-content {
+        display: flex;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 0;
+    }
+    
+    .services-col-1 {
+        grid-column: 1 / 4;
+    }
+    
+    .services-col-2 {
+        grid-column: 2 / 4;
+    }
+    
+    .services-col-3 {
+        grid-column: 3 / 4;
+    }
+    
+    .services-col-4 {
+        grid-column: 4 / 4;
+    }
+    
+    .services-col-1 , .services-col-3 {
+        background-color: var(--primary-color);
+        height: 350px;
+    }
+    
+    .services-col-2 , .services-col-4{
+        background-color: rgb(183, 134, 73);
+        height: 350px;
+    }
+    
+    .services h2 {
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        color: white;
+    }
+    
+    .services p {
+        font-family: 'Poppins';
+        color: white;
+        font-size: .9rem;
+        text-align: center;
+        padding: 10px 20px 10px 20px;
+    }
+    
+    .img-col-1 , .img-col-2 , .img-col-3 , .img-col-4 {
+        display: flex;
+        justify-content: center;
+    }
+    
+    /* about us */
+    
+    .about-us {
+        display: flex;
+    }
+    
+    .about-img {
+        display: flex;
+        height: 600px;
+        width: 500px;
+    }
+    
+    .container-about-img {
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+    }
+    
+    .about-barber {
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    
+    .about-barber h2 , h3 {
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        text-transform: uppercase;
+    }
+    
+    .about-barber h2 {
+        color: var(--primary-color);
+        font-size: 1rem;
+        margin-top: 120px;
+    }
+    
+    .about-barber h3 {
+        color: rgb(0, 0, 0);
+        font-size: 3rem;
+        text-align: left;
+        margin: 0;
+    }
+    
+    .about-barber p {
+        color: inherit;
+        font-size: .95rem;
+        font-family: 'Poppins';
+    }
+    
+    /* calendar button */
+    
+    .calendar {
+        display: flex;
+        text-transform: uppercase;
+        height: 80px;
+        width: 200px;
+        border: none;
+        background-color: var(--primary-color);
+        cursor: pointer;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .calendar-img {
+        width: 50px;
+        height: 50px;
+        color: var(--secondary-color);
+        background-color: var(--third-color);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .fa-regular.fa-calendar-days {
+        font-size: 1.5rem;
+    }
+    
+    .number {
+        font-size: 1.35rem;
+    }
+    
+    .calendar a {
+        font-size: 0.8rem;
+        font-family: 'Barlow Semi Condensed';
+        text-decoration: none;
+        color: var(--secondary-color);
+        text-align: left;
+    }
+    
+    /* testimonial */
+    
+    .testimonial {
+        display: flex;
+        background-color: rgb(234, 232, 222);
+        height: 450px;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    
+    .testimonial-whitebox {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: var(--secondary-color);
+        height: 300px;
+        width: 30%;
+        margin: 10px;
+    }
+    
+    .testimonal-info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    
+    .mobil {
+        display: none;
+    }
+    
+    /* testimonal text */
+    
+    .testimonial-header {
+        display: flex;
+        width: 100%;
+        background-color: rgb(234, 232, 222);
+        align-content: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .testimonial-h2 {
+        color: var(--primary-color);
+        font-size: 1rem;
+        font-family: 'Barlow Semi Condensed';
+        text-transform: uppercase;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .testimonial-h3 {
+        display: flex;
+        text-align: center;
+        font-size: 2.8rem;
+        font-family: 'Barlow Semi Condensed';
+        text-transform: uppercase;
+        margin: 0 auto;
+    }
+    
+    .testimonial-whitebox.p {
+        background-color: var(--secondary-color);
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;    
+    }
+    
+    blockquote {
+        color: grey;
+        font-family: 'Poppins';
+        text-align: left;
+        font-size: 0.75rem;
+    }
+    
+    .testimonial-name {
+        font-family: 'Poppins';
+        text-align: left;
+        font-size: 0.9rem;
+        margin: 0px;
+        height: 30px;
+    }
+    
+    .testimonial-customer {
+        font-family: 'Poppins';
+        text-align: left;
+        font-size: 0.7rem;
+        color: var(--primary-color);
+        text-transform: uppercase;
+        margin: 0px;
+        height: 30px;
+    }
+    
+    /* testimonial icons */
+    
+    .background-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--primary-color);
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        margin-top: -25px;
+        margin-left: 20px;
+    }
+    
+    .fa-quote-left:before {
+        color: white;
+    }
+    
+    .fa-quote-left {
+        color: var(--primary-color);
+    }
+    
+    .fa-star {
+        color: var(--primary-color);
+    }
+    
+    .fa-solid.fa-circle {
+        display: none;
+    }
+    
+    /* testimonial avatars */
+    
+    .testimonial-avatar {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin-left: 20px;
+        margin-top: -5px;
+    }
+    
+    /* footer */
+    
+    footer {
+        display: flex;
+        background-color: var(--third-color);
+        color: var(--secondary-color);
+        justify-content: center;
+        height: 300px;
+        width: 100%;
+    }
+    
+    .footer h2 {
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        text-transform: uppercase;
+    }
+    
+    .footer.p , .footer a {
+        font-family: 'Poppins';
+        font-size: .8rem;
+        color: rgb(181, 181, 179);
+    }
+    
+    .footer a {
+        text-decoration: none;
+        color: rgb(181, 181, 179);
+        font-family: 'Poppins';
+    }
+    
+    .footer-explore , .footer-info , .footer-contact {
+        margin: 60px;
+    }
+    
+    .footer-desktop {
+        margin: 80px 10px 10px 10px;
+    }
+    
+    /* icons and bullets */
+    
+    .social-media {
+        display: inline-block;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+    
+    .footer li {
+        margin-left: -40px;
+    }
+    
+    .fa-brands {
+        color: var(--secondary-color);
+        background-color: var(--primary-color);
+        border: 15px solid var(--primary-color);
+        border-radius: 50%;
+    }
+    
+    .bullet {
+        line-height: 1.5em;
+        list-style-type: none;
+    }
+    
+    .contact-img {
+        margin-right: 10px;
+        margin-top: 4px;
+    }
+    
+    }
